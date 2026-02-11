@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tres en Raya</h1>
+        
+        <div class="game-info">
+            <p class="turn-indicator">Turno: <span id="current-player">X</span></p>
+            <p class="game-status" id="game-status">Juego en curso</p>
+        </div>
+        
+        <div id="board" class="board">
+            <!-- El tablero se generaría con JavaScript, aquí muestro la estructura visual -->
+            <div class="cell" id="0" data-row="0" data-col="0"></div>
+            <div class="cell" id="1" data-row="0" data-col="1"></div>
+            <div class="cell" id="2" data-row="0" data-col="2"></div>
+            <div class="cell" id="3" data-row="1" data-col="0"></div>
+            <div class="cell" id="4" data-row="1" data-col="1"></div>
+            <div class="cell" id="5" data-row="1" data-col="2"></div>
+            <div class="cell" id="6" data-row="2" data-col="0"></div>
+            <div class="cell" id="7" data-row="2" data-col="1"></div>
+            <div class="cell" id="8" data-row="2" data-col="2"></div>
+        </div>
+        
+        <div class="controls">
+            <p class="reset-hint">Presiona <kbd>R</kbd> para reiniciar</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
