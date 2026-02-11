@@ -13,11 +13,10 @@ const combinacionesGanadoras = [
     [2, 4, 6]  // Diagonal inversa
 ];
 const tablero = document.getElementById('board');//capturamos el div completo
-const listaElementos = tablero.querySelectorAll('.cell')
-let jugadas = ["", "", "", "", "", "", "", "", ""];
+const listaElementos = tablero.querySelectorAll('.cell');//capturamos todos los hijos de ese div que tengan como nombre de clase .cell
+let jugadas = ["", "", "", "", "", "", "", "", ""];//creamos el array vacio de las jugadas
 
 console.log(listaElementos)
-
 
 
 listaElementos.forEach(element => {
@@ -26,7 +25,7 @@ listaElementos.forEach(element => {
             //para validar si el juego ha terminado y el juego termina el return no deja que se ejecute el listener
             return;
         }
-        console.log(e.target.id);
+       // console.log(e.target.id);
         if (e.target.classList.contains('player-x') || e.target.classList.contains('player-o')) {
             return //con esto validamos si la casilla ya contiene el estilo de relleno, si lo contiene el return no deja que se siga ejecutando la funcion
         }
@@ -65,7 +64,7 @@ listaElementos.forEach(element => {
             return;
         }
             //cambiar turno
-        console.log(jugadas)
+        //console.log(jugadas)
         if (current_player == "X") {
             current_player = "O";
         } else {
